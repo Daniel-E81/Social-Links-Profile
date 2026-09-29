@@ -1,0 +1,90 @@
+:root {
+  --active: #c5f82a;
+  --White: #ffffff;
+  --Grey700: #333333;
+  --Grey800: #1f1f1f;
+  --Grey900: #141414;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--Grey900);
+  color: var(--White);
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  background-color: var(--Grey800);
+  border-radius: 14px;
+  padding: 28px 24px;
+  width: 360px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+  text-align: center;
+}
+
+.image {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 22px;
+}
+
+.image img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.content h1 {
+  margin: 0;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.content p {
+  margin: 10px 0 0;
+  color: var(--active);
+  font-weight: 600;
+}
+
+.caption {
+  margin: 24px 0 20px;
+  font-size: 0.95rem;
+}
+
+.social-links ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.social-links ul li {
+  width: 100%;
+  background-color: var(--Grey700);
+  margin: 10px 0;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+}
+
+.social-links ul li:hover {
+  background-color: var(--active);
+  color: var(--Grey900);
+  cursor: pointer;
+}
+
+.social-links ul li a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  padding: 12px 0;
+  font-weight: 600;
+}
